@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int length, breadth, area, perimeter;
+
+    //Input length and breadth of the reactangle
+    printf("Enter length and breadth of the rectangle: ");
+    scanf("%d%d", &length, &breadth);
+
+    //Calculate area and perimeter
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+
+    //Display area and perimeter
+    printf("perimeter = %d\n", perimeter);
+    printf("area = %d\n", area);
+    return 0;
+}
