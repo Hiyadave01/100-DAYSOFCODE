@@ -15,15 +15,15 @@ Area=21, Perimeter=20
 #include<stdio.h>
 
 int main() {
-    int celsius, fahrenheit;
+    float celsius, fahrenheit;
 
     //Input temperature in Celsius
     printf("Enter temperature in Celsius: ");
-    scanf("%d", &celsius);
+    scanf("%f", &celsius);
 
     //Convert Celsius to Fahrenheit
     fahrenheit = (celsius * 9/5) + 32;
-    printf("Temperature in Fahrenheit: %d\n", fahrenheit);
+    printf("Temperature in Fahrenheit: %f\n", fahrenheit);
     return 0;
     
 }
