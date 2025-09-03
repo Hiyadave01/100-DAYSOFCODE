@@ -20,3 +20,30 @@ Input 4:
 31
 Output 4:
 Membership Cancelled
+
+#include<stdio.h>
+int main()
+ {
+    int daysLATE, fine;
+
+    //Input the number of late days
+    printf("Enter number of late days:");
+    scanf("%d", &daysLATE);
+
+    //Calculate fine 
+    if(daysLATE >=1 && daysLATE <=5){
+        printf("Fine : Rs2/day\n");
+    }
+    else if(daysLATE >=6 && daysLATE <=10){
+        printf("Fine : Rs4/day\n");
+    }
+    else if(daysLATE >=11 && daysLATE <=30){
+        printf("Fine : Rs6/day\n");
+    }
+    else if(daysLATE >30){
+        printf("Membership Cancelled!\n");
+    }
+    else {
+        printf("Invalid input.\n");
+    }
+}

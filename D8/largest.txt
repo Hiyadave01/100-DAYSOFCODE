@@ -13,17 +13,17 @@ Largest is 0
 
 #include<stdio.h>
 int main(){
-    float a, b, c;
+    int a, b, c;
     printf("Enter three numbers:");
-    scanf("%f %f %f", &a, &b, &c);
+    scanf("%d %d %d", &a, &b, &c);
     if(a>b && a>c)
-       {printf("%.2f is the largest number.\n", a);}
+       {printf("%d is the largest number.\n", a);}
 
     else if(b>a && b>c)
-      {printf("%.2f is the largest number.\n", b);}
+      {printf("%d is the largest number.\n", b);}
 
     else
-        {printf("%.2f is the largest number.\n", c);}
+        {printf("%d is the largest number.\n", c);}
         return 0;
 
 }

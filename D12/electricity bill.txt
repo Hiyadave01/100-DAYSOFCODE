@@ -15,3 +15,29 @@ Input 3:
 250
 Output 3:
 Bill: ₹2200
+
+
+#include<stdio.h>
+int main() {
+    int unitsconsumed;
+    
+    printf("Enter the number of units consumed :");
+    scanf("%d", &unitsconsumed);
+
+    if(unitsconsumed >=1 && unitsconsumed <=100) {
+        printf("The rate will be Rs5/unit.\n");
+    }
+    else if(unitsconsumed >=101 && unitsconsumed <= 200) {
+        printf("The rate will be Rs7/unit.\n");
+    }
+    else if(unitsconsumed >= 201 && unitsconsumed <= 300) {
+        printf("The rate will be Rs10/unit.\n");
+    }
+    else if(unitsconsumed > 300) {
+        printf("The rate will be Rs12/unit.\n");
+    }
+    else {
+       printf("Invalid input!\n");
+    }
+   return 0; 
+}

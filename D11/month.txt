@@ -55,5 +55,8 @@ int main(){
         case 12:
             printf("December - 31 days\n");
             break;
+        default:
+           printf("Invalid option.\n");
+           break;
     }
 }
