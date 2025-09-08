@@ -15,3 +15,50 @@ Input 3:
 15 5 /
 Output 3:
 3
+
+#include<stdio.h>
+int main () 
+{  
+    int num1, num2;
+    char operator;
+    int Result;
+
+    //Ask the user for input
+    printf("Enter an operator (+, -, *, /, %%):");
+    scanf(" %c", &operator);
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    //Perform using switch case
+    switch(operator) {
+        case '+':
+            Result = num1 + num2;
+            printf("Result = %d\n", Result);
+            break;
+        case '-':
+            Result = num1 - num2;
+            printf("Result = %d\n", Result);
+            break;  
+        case '*':
+            Result = num1 * num2;   
+            printf("Result = %d\n", Result);
+            break;
+        case '/':
+            if (num2 != 0) {
+                Result = num1 / num2;   
+                printf("Result = %d\n", Result);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        case '%':
+            if (num2 != 0) {
+                Result = num1 % num2;   
+                printf("Result = %d\n", Result);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+    }
+    
+}
