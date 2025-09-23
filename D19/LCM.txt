@@ -10,3 +10,27 @@ Input 2:
 7 3
 Output 2:
 21
+
+
+#include<stdio.h>
+int main(){
+    int a, b, LCM =0, HCF;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    int min = (a < b) ? a : b;
+
+    //Calculate HCF
+    for( int i = 1; i <=min; i++){
+        if( a % i == 0 && b % i == 0){
+            HCF = i;
+        }
+    }
+
+    //Calculate LCM
+    LCM = (a * b) / HCF;
+    printf("LCM of %d and %d is: %d\n", a, b, LCM);
+    return 0;
+}
+

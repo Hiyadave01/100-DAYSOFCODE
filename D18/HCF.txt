@@ -10,3 +10,25 @@ Input 2:
 7 9
 Output 2:
 1
+
+
+#include <stdio.h>
+int main(){
+    int a, b, HCF, i;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    //Find smaller number
+    int min = (a < b) ? a : b;
+
+    //Loop from 1 to min number
+    for(i = 1; i <= min; i++)
+    {
+        if(a % i == 0 && b % i == 0)
+        {
+            HCF = i;
+        }
+    }
+     printf("HCF of %d and %d is %d.\n", a, b, HCF);
+     return 0;
+}
