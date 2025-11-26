@@ -1,0 +1,33 @@
+/*Q50: Write a program to print the following pattern:
+*****
+ ****
+  ***
+   **
+    *
+
+Sample Test Cases:
+Input 1:
+
+Output 1:
+*****
+ ****
+  ***
+   **
+    *
+*/
+
+
+#include <stdio.h>
+int main() {
+    int p, q, i, j;
+
+    printf("Enter the number of rows and columns: ");
+    scanf("%d %d", &p, &q);
+    for (int i = 1; i <= p; i++) {
+        for (int j = i; j <= q; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}

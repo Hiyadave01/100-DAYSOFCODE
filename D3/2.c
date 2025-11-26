@@ -1,0 +1,29 @@
+/* Write a program to calculate the area and perimeter of a rectangle given its length and breadth.
+
+Sample Test Cases:
+Input 1:
+5 10
+Output 1:
+Area=50, Perimeter=30
+
+Input 2:
+3 7
+Output 2:
+Area=21, Perimeter=20*/
+
+
+#include<stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    //Input temperature in Celsius
+    printf("Enter temperature in Celsius: ");
+    scanf("%f", &celsius);
+
+    //Convert Celsius to Fahrenheit
+    fahrenheit = (celsius * 9/5) + 32;
+    printf("Temperature in Fahrenheit: %f\n", fahrenheit);
+    return 0;
+    
+}
